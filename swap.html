@@ -1,0 +1,71 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Variable Swap</title>
+</head>
+<body>
+    <h2>Variable Swap</h2>
+    <p>Enter the values of two variables:</p>
+    <label for="variable1">Variable 1:</label>
+    <input type="text" id="variable1">
+    <br>
+    <label for="variable2">Variable 2:</label>
+    <input type="text" id="variable2">
+    <br>
+    <button onclick="swapVariables()">Swap Variables</button>
+    <p id="result"></p>
+
+    <script>
+        function swapVariables() {
+            var variable1 = document.getElementById("variable1").value;
+            var variable2 = document.getElementById("variable2").value;
+
+
+            // Swap the values without using a third variable
+            variable1 = variable1 + variable2;
+            variable2 = variable1 - variable2;
+            variable1 = variable1 - variable2;
+            console.log(variable1);
+            console.log(variable2);
+            resultElement = document.getElementById('result');
+            resultElement.innerHTML += "The value of first variable is: ";
+             resultElement.append(variable1);
+                     resultElement.innerText= 'The value of second variable is:'+ variable2;
+            alert(`The value of first variable is ${variable1} and The value of Second Variable Is :${variable2}`);
+    </script>}
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Variable Swap</title>
+</head>
+<body>
+    <h2>Variable Swap</h2>
+    <p>Enter the values of two variables:</p>
+    <label for="variable1">Variable 1:</label>
+    <input type="text" id="variable1">
+    <br>
+    <label for="variable2">Variable 2:</label>
+    <input type="text" id="variable2">
+    <br>
+    <button onclick="swapVariables()">Swap Variables</button>
+    <p id="result"></p>
+
+    <script>
+        function swapVariables() {
+            var variable1 = document.getElementById("variable1").value;
+            var variable2 = document.getElementById("variable2").value;
+
+            // Swap the values without using a third variable
+            variable1 = variable1 + variable2;
+            variable2 = variable1 - variable2;
+            variable1 = variable1 - variable2;
+
+            document.getElementById("result").innerHTML = "Variable 1: " + variable1 + "<br>Variable 2: " + variable2;
+        }
+    </script>
+</body>
+</html>

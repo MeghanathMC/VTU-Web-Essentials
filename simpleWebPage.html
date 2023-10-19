@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <style>
+        /* Set the background image for the entire page */
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* Style a header with a different font and background image */
+        header {
+            background-image: url('https://images.pexels.com/photos/1647962/pexels-photo-1647962.jpeg?auto=compress&cs=tinysrgb&w=600');
+            background-size:
+            background-repeat: no-repeat;
+            text-align: center;
+            padding: 100px 0;
+            border:2px solid blue;
+            color:orange;
+            font-family: 'Times New Roman', serif;
+
+        }
+
+        /* Style a section with a different font and background color */
+        section {
+            background-color: #f2f2f2;
+            padding: 20px;
+            font-family: 'Courier New', monospace;
+            color: #333;
+        }
+
+        /* Style a button with a different font and background color */
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            font-family: 'Verdana', sans-serif;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Style a footer with a different font and background color */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="web">
+        <h1>Welcome to My Interactive Web Page</h1>
+        <p>This page showcases different font styles and background images.</p>
+        </div>
+    </header>
+    <section>
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button id="learnMoreButton">Learn More</button>
+        <div id="learnMoreContent" style="display: none;">
+            <p>Here's some additional information about me.</p>
+        </div>
+    </section>
+    <footer>
+        &copy; 2023 My Interactive Web Page
+    </footer>
+
+    <script>
+        // JavaScript to make the button interactive
+        const learnMoreButton = document.getElementById('learnMoreButton');
+        const learnMoreContent = document.getElementById('learnMoreContent');
+        
+        learnMoreButton.addEventListener('click', () => {
+            if (learnMoreContent.style.display === 'none') {
+                learnMoreContent.style.display = 'block';
+            } else {
+                learnMoreContent.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area OF Square</title>
+    <style>
+        body{
+            text-align:center;
+            background-color: bisque;
+        }
+        button{
+            background-color:burlywood;
+            margin:2px;
+            margin-top:5px;
+            padding:2px;
+            border-radius:20%;
+            border:2px solid black;
+        }
+        p{
+            color:black;
+            background-color:#fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight:bold;
+
+        }
+        input{
+            border:1px dashed black;
+            margin:2px;
+            padding:2px;
+        }
+    </style>
+</head>
+<body>
+    <p>Enter a value of side length: </p>
+    <input type="text" placeholder="enter a valid number.." id="sidelength">
+    <br><button onclick="calcArea()">Calculate Area</button>
+    <p id="result"></p>
+    <script>
+
+        function calcArea(){
+            var side=document.getElementById("sidelength").value;
+            if(isNaN(side)){
+                alert("please enter a valid number :")
+                return;
+
+            }
+            var res=side*side;
+            document.getElementById("result").innerHTML="The area of square is : "+res;
+        }
+    </script>
+
+    
+</body>
+</html>

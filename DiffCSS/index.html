@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diff Types Of CSS</title>
+    <!-- for external css -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            display:flex;
+            margin:8px;
+            padding:10px;
+        }
+        .internal{
+            width:400px;
+            height:auto;
+            background-color:red;
+            color:yellow;
+            border:2px solid green;
+            border-radius:100;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight:bold;margin:10px;
+            padding:10px;
+
+        }
+        #in1{
+            color:white;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Inline CSS -->
+   <div>
+    <h1>Inline CSS</h1>
+    <p style=" width:300px;height:auto;color: #fff; background-color:black;border:2px solid aqua;font-family:Arial, Helvetica, sans-serif;font-weight:bold;font-size:16px;margin:2px;padding:2px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique at repellat sit ipsam voluptatibus, in deleniti sint quas velit cum? Debitis, adipisci ex rerum laboriosam deleniti nobis nostrum consequatur consequuntur.</p>
+
+   </div>
+   <!-- Internal CSS-->
+   <div class="internal">
+    <h1 id="in1">Internal CSS</h1>
+    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur amet quam eaque cum doloribus itaque voluptates distinctio porro perspiciatis deserunt veritatis voluptate inventore, odit tempora quas ab voluptatem omnis accusantium.</p>
+   </div>
+   <div class="external">
+    <h1>External CSS</h1>
+    <!-- External CSS -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus alias numquam provident dignissimos hic ipsum neque voluptatibus sint, eius expedita doloribus cum aspernatur dolore maxime assumenda facilis rerum omnis! Sint.</p>
+
+
+
+   </div>
+
+
+    
+</body>
+</html>

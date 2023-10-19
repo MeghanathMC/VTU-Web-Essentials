@@ -1,0 +1,12 @@
+.external{
+    background-color:aqua;
+    color:black;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bold;
+    padding:10px;
+    margin:4px;
+
+}
+.external h1{
+    color:white;
+}

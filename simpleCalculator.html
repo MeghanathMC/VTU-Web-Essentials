@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        h1{
+            font-size:40px;
+            border: 2px solid black;
+        }
+        input[type="text"]{
+            font-size:larger;
+            font-weight:bold;
+            width: 95%;
+            border:3px solid black;
+
+        }
+        input[type="button"]{
+            font-size:larger;
+            width:100%;
+            background-color: rgba(131, 129, 129, 0.855);
+            cursor:pointer;
+            color:#fff;
+        }
+        input[type="button"]:hover{
+            background-color:cadetblue;
+        }
+        body{
+            background-image: url("https://img.freepik.com/premium-photo/new-year-decorations-golden-color-with-confetti-color-background-with-copy-space_128867-2347.https://img.freepik.com/premium-vector/bright-sun-glare-explosion-shining-white-lens-blurred-dust-elegant-poster-background-template-vector_93487-4853.jpg?w=2000");
+            color:blue
+        }
+
+
+        table{
+            position:center;
+            margin-left:38%;
+            margin-top:10%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <center><h1>Simple Calculator</h1></center>
+    <table border="6px solid black">
+        <form action="" name="form1">
+            <tr>
+                <td colspan="3">
+                    <input type="text" id="cal" name="result">
+                </td>
+                <td>
+                    <input type="button" value="AC" onclick="form1.result.value=''">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td > <input type="button" value="7" onclick="form1.result.value+='7'"></td>
+                <td > <input type="button" value="8" onclick="form1.result.value+='8'"></td>
+                <td > <input type="button" value="9" onclick="form1.result.value+='9'"></td>
+                <td > <input type="button" value="/" onclick="form1.result.value+='/'"></td>
+
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="form1.result.value+='4'"></td>
+                <td > <input type="button" value="5" onclick="form1.result.value+='5'"></td>
+                <td > <input type="button" value="6" onclick="form1.result.value+='6'"></td>
+                <td > <input type="button" value="*" onclick="form1.result.value+='*'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="form1.result.value='1'"></td>
+                <td > <input type="button" value="2" onclick="form1.result.value+='2'"></td>
+                <td > <input type="button" value="3" onclick="form1.result.value+='3'"></td>
+                <td > <input type="button" value="-" onclick="form1.result.value+='-'"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="0" onclick="form1.result.value='0'"></td>
+                <td > <input type="button" value="." onclick="form1.result.value+='.'"></td>
+                <td > <input type="button" value="+" onclick="form1.result.value+='+'"></td>
+                <td > <input type="button" value="=" onclick="form1.result.value=eval(form1.result.value)"></td>
+            </tr>
+
+
+
+
+
+        </form>
+
+
+
+    </table>
+    
+</body>
+</html>
